@@ -1,1 +1,285 @@
-ILL UPLOAD MY HTML PAGE CODE HERE
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harshit Pansari | Portfolio</title>
+  
+  <!-- Custom Fonts for a Professional Look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #222;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Accent Color Definition: A professional blue */
+    :root {
+      --accent-color: #007bff;
+      --header-bg: #1a1a1a;
+      --section-hover-bg: #e9f5ff;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: var(--header-bg); 
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #bbb;
+      font-size: 1em;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white; 
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    
+    /* Section Styling */
+    section {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    section h2 {
+      color: var(--accent-color); 
+      border-bottom: 2px solid var(--accent-color); 
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 5px;
+      font-size: 1.4em;
+    }
+
+    .about-img {
+      display: block;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px auto;
+      border: 3px solid var(--accent-color); 
+      box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.2); /* Soft glow */
+    }
+
+    section p {
+      text-align: justify;
+      margin: 10px 0;
+    }
+
+    /* List & Skills Styling */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+      justify-content: center;
+    }
+
+    ul li {
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 0; 
+      transition: background 0.3s, transform 0.1s;
+      flex-grow: 1; 
+      max-width: 48%; /* Ensures two columns on desktop */
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    ul li:hover {
+      background: var(--section-hover-bg); 
+      transform: translateY(-2px);
+    }
+
+    /* Project & Achievement Cards */
+    .project, .achievement {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+      border-left: 5px solid var(--accent-color); 
+      transition: background 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .project:hover, .achievement:hover {
+      background-color: #e6e6e6;
+    }
+
+    .project h3, .achievement h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent-color); 
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      section h2 {
+        font-size: 1.2em;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      ul li {
+        max-width: 100%; /* Full width on small screens */
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm <span style="color:var(--accent-color);">Harshit Pansari</span></h1>
+    <p>B.Tech Student, Programmer, and GDG PR Domain Participant since UG1</p>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <!-- Profile picture source updated to the attached image file name -->
+    <img src="c:\Users\harsh\OneDrive\Pictures\Saved Pictures\IMG_20220428_230222_793.jpg" alt="Profile Picture" class="about-img">
+    <h2>About Me</h2>
+    <p>I am a dedicated B.Tech student at *IIIT Sri City* with a strong foundation in programming, particularly in *C, C++, and Python. I have been a **part of the GDG Public Relations (PR) domain since the UG1 level, where I combine my **graphic designing* and *video editing* skills to manage and communicate our chapter's events and outreach. My primary technical focus is on continuously improving my knowledge in *Data Structures and Algorithms (DSA)* and building practical applications.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C & C++ Programming</li>
+      <li>Python</li>
+      <li>DSA (Beginning Level)</li>
+      <li>Video Editing</li>
+      <li>Graphic Designing</li>
+      <li>HTML & CSS</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Playing Games</li>
+      <li>Music (Listening & Exploration)</li>
+      <li>Sci-Fi (Books & Movies)</li>
+      <li>Exploring Technology</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <!-- Only the Academic Excellence achievement remains. -->
+    <div class="achievement">
+      <h3>Academic Excellence in Core Subject</h3>
+      <p>Achieved top marks in the introductory Programming course, demonstrating a strong grasp of fundamental concepts in C.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Only the Booking System project remains. -->
+    <div class="project">
+      <h3>Booking System (Conceptual)</h3>
+      <p>A conceptual or initial stage implementation of a *Booking System*. This project focuses on managing user reservations and available slots efficiently. (Please update this description with technologies used and scope!)</p>
+      <p><strong>Tech Used:</strong> <span style="font-style:italic;">[e.g., C++ for Console App, Python for backend, HTML/CSS for UI]</span></p>
+      <p>
+        <a href="[Your Project Live Demo URL or Video Walkthrough]" target="_blank">View Demo/Details</a> | 
+        <a href="https://github.com/harshit612007/[BookingSystemRepoName]" target="_blank">GitHub Repository</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:pansari.h25@iiits.in">pansari.h25@iiits.in</a></p>
+    <p>GitHub: <a href="https://github.com/harshit612007" target="_blank">https://github.com/harshit612007</a></p>
+  </section>
+
+  <footer>
+    <p>Built as part of Git & GitHub Bootcamp • GDG x IOTA </p>
+  </footer>
+</body>
+</html>
